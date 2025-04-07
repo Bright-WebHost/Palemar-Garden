@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Palemar Garden</title>
+    <link rel="icon" href="images/favicon.ico" type="image/gif">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Palemar Garden Mangalore" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+
+        <!-- Preloader -->
+        <div id="de-loader"></div>
+
+        <!-- Content -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+
+            <div class="relative wow fadeIn" style="margin: 40px;">
+                <div class="owl-custom-nav menu-float">
+                    <a class="btn-prev">❮</a>
+                    <a class="btn-next">❯</a>
+
+                    <div id="project-single-carousel" class="owl-carousel owl-theme">
+                        <!-- Project Images -->
+                        <div class="item">
+                            <div class="hover relative rounded-1 overflow-hidden text-light">
+                                <img src="images/project-single/1.webp" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hover relative rounded-1 overflow-hidden text-light">
+                                <img src="images/project-single/2.webp" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hover relative rounded-1 overflow-hidden text-light">
+                                <img src="images/project-single/3.webp" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="hover relative rounded-1 overflow-hidden text-light">
+                                <img src="images/project-single/4.webp" class="w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+    </div>
+
+    <!-- Overlay Content -->
+    <div id="extra-wrap" class="text-light">
+        <div id="btn-close">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="extra-content">
+            <img src="images/logo-white.webp" class="w-150px" alt="">
+            <div class="spacer-30-line"></div>
+
+            <h5>Our Services</h5>
+            <ul class="no-style">
+                   <li><a href="contact.html">Wedding</a></li>
+                                        <li><a href="contact.html">Parties & Celebrations</a></li>
+                                        <li><a href="contact.html">Seminars & Conferences</a></li>
+                                        <li><a href="contact.html">Family Gatherings</a></li>
+                                        <li><a href="contact.html">Live Events & Music Nights</a></li>
+            </ul>
+
+            <div class="spacer-30-line"></div>
+
+            <h5>Contact Us</h5>
+            <div><i class="icofont-clock-time me-2 op-5"></i>Monday - Friday 08.00 - 18.00</div>
+            <div><i class="icofont-location-pin me-2 op-5"></i>100 S Main St, New York</div>
+            <div><i class="icofont-envelope me-2 op-5"></i>contact@palemargarden.com</div>
+
+            <div class="spacer-30-line"></div>
+
+            <h5>About Us</h5>
+            <p>Transform your outdoor space with our expert garden services! From design to maintenance, we create
+                beautiful, thriving gardens tailored to your vision. Let us bring your dream garden to life—professional, reliable, and passionate about nature.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="tel:+917483574759" style=" text-decoration: none;"> 
+                                        <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var owl = $("#project-single-carousel");
+            owl.owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000, // 2 seconds
+                autoplayHoverPause: true
+            });
+
+            // Custom navigation
+            $(".btn-next").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+
+            $(".btn-prev").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+        });
+    </script>
+</body>
+
+</html>
